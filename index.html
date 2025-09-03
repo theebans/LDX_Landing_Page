@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>London Diamond Exchange</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon1.ico" type="image/x-icon">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta&display=swap" rel="stylesheet">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            min-height: 100vh;
+            width: 100%;
+            font-family: 'Cascadia Mono', monospace;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: 
+                linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url('background_image.jpeg') no-repeat center center/cover;
+            animation: fadeIn 2s ease-in;
+        }
+
+        .container {
+            max-width: 90%;
+        }
+
+        h1 {
+            font-family: 'Lexend Zetta', sans-serif;
+            font-weight: normal;
+            font-size: 3rem;
+            margin-bottom: 30px;
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-shadow: 2px 2px 15px rgba(0,0,0,0.7);
+            animation: fadeUp 2s ease-out forwards;
+        }
+
+        a.ebay-link {
+            display: inline-block;
+            padding: 18px 40px;
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: white;
+            background-color: rgba(255,255,255,0.1);
+            border: 2px solid white;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            animation: fadeUp 2.5s ease-out forwards;
+        }
+
+        a.ebay-link:hover {
+            background-color: rgba(255,255,255,0.3);
+            transform: scale(1.05);
+        }
+
+        /* Social links with icons */
+        .social-links {
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-links a img {
+            display: block;
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-links a:hover img {
+            transform: scale(1.1);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeUp {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; padding: 12px 25px; }
+            a.ebay-link { font-size: 1.2rem; padding: 15px 30px; }
+            .social-links a img { width: 35px; height: 35px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>LONDON DIAMOND EXCHANGE</h1>
+        <a class="ebay-link" href="https://www.ebay.co.uk/usr/londondiamondexchange" target="_blank">
+            Visit Our eBay Store
+        </a>
+
+        <div class="social-links">
+            <a href="https://www.instagram.com/londondiamondexchange" target="_blank">
+                <img src="Insta_Logo.png" alt="Instagram">
+            </a>
+            <a href="https://x.com/LdxLondon" target="_blank">
+                <img src="X_Logo.png" alt="X / Twitter">
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
